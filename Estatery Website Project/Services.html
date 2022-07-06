@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatery Realty - Services</title>
+    <link rel="shortcut icon" href="./images/estatery-logo.png">
+
+
+    <!-- bootsrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- =================== Nav Bar ================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <div class="sandwich">
+                <a class="navbar-brand" href="Index.html">
+                    <img src="./images/estatery-logo.png" alt="Estatery-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Buyrent.html">buy/rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Agents.html">agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./About-us.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Services.html">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact-us.html">contact us</a>
+                    </li>
+                    <div class="mx-2">
+                        <button class="btn btn-light signin" data-bs-toggle="modal" data-bs-target="#signinModal">Login</button>
+                        <button class="btn btn-danger signupBtn" data-bs-toggle="modal"
+                          data-bs-target="#signupModal">Signup</button>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =================== Nav Bar End=============================-->
+
+    <!-- Sign In Model -->
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group my-2">
+              <label for="inputEmail1">Email address</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group  my-2">
+              <label for="inputPassword1">Password</label>
+              <input type="password" class="form-control" id="inputPassword1" required>
+            </div>
+            <div class="form-group form-check  my-2">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit my-2" class="btn btn-primary">Sign In</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Model -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group my-2 has-validation">
+              <label for="inputName1">Full Name</label>
+              <input type="name" class="form-control" id="inputName1" required>
+            </div>
+            <div class="form-group my-2 has-validation">
+              <label for="inputEmail1">Email address</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group  my-2 has-validation">
+              <label for="inputPassword1">Password</label>
+              <input type="password" class="form-control" id="inputPassword1" required>
+            </div>
+            <div class="form-group  my-2 has-validation">
+              <label for="inputPassword2">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword2" required>
+            </div>
+            <div class="form-group form-check  my-2 has-validation">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" value="">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit my-2" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="banner" style="padding-bottom: 0;">
+        <div class="services-banner">
+        </div>
+        <div class="banner-title">
+            <p>Our Services</p>
+
+        </div>
+    </section>
+
+    <section class="our-services">
+        <div class="top2-services">
+            <div class="service">
+                <div>
+                    <img src="./images/beach.jpeg" alt="">
+                </div>
+                <div class="service-description">
+                    <p class="services-title">Photo & Video Creation</p>
+                    <p>If you have a property and want to sell/rent, our team will do all that's necessary from pictures
+                        & videos to reach out to people and sell/rent your property as fast as we can.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <img src="./images/pelican.jpeg" alt="">
+                </div>
+                <div class="service-description">
+                    <p class="services-title">Property Marketing</p>
+                    <p>If you have a property and want to sell/rent, our team will do all that's necessary from pictures
+                        & videos to reach out to people and sell/rent your property as fast as we can.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div>
+                    <img src="./images/island.jpeg" alt="" style="width: 100%; height: 500px;">
+                </div>
+                <div class="service-description" style="margin-top: -10%;">
+                    <p class="services-title">Property Listing</p>
+                    <p>If you have a property and want to sell/rent, our team will do all that's necessary from pictures
+                        & videos to reach out to people and sell/rent your property as fast as we can.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== Contact Form =============================-->
+    <footer class="footer-area contact-form">
+        <div class="fede-info ">
+            <div class="title-fede title-fedes ">
+                <p>Ask an agent</p>
+            </div>
+            <div class="subtitle-fede title-fedess">
+                <p>We're here to help 7 days a week.</p>
+            </div>
+            <form id="form" onsubmit="event.preventDefault(); validateForm()" action="./php/mail.php"
+                name="contact-form" method="post" autocomplete="off" enctype="application/x-www-form-urlencoded">
+                <div class="form-input">
+                    <label> Name: <span>*</span></label>
+                    <input id="name" name="name" type="text" placeholder="Please enter your name">
+                </div><br><small class="error"></small><br>
+                <div class="form-input">
+                    <label> Email: <span>*</span></label>
+                    <input type="text" name="email" placeholder="Please enter your email" id="email">
+                </div><br><small class="error"></small><br>
+                <div class="form-input">
+                    <label> Message: <span>*</span></label>
+                    <textarea name="message" placeholder="How can I help you?" id="message"></textarea>
+                </div><br><small class="error"></small><br>
+                <div class="form-submit">
+                    <input class="submit-btn" type="submit">
+                    <p id="success"></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- =================== End Contact Form =============================-->
+
+        <!-- =================== Footer =================================-->
+        <p style="letter-spacing: 0px; border: 0.5px solid dimgray; margin: 2rem 5rem;"></p>
+        <div class="container">
+            <div class="">
+                <div class="social text-center">
+                    <a class="hoveer" target="blank" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a class="hoveer" target="blank" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="hoveer" target="blank" href="mailto:shivamsri142@gmail.com"><i
+                            class="fa-solid fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =================== Footer End ================================-->
+
+
+
+
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
